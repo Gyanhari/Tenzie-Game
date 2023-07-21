@@ -10,6 +10,7 @@ body {
   background-color: #0b2434;
   padding: 20px;
   font-family: "Karla", sans-serif;
+  user-select: none;
 }
 
 main {
@@ -82,6 +83,13 @@ main {
   position: absolute;
   top: 15px;
   right: 45px;
+  border: 3px dotted gray;
+  padding: 5px;
+}
+.best-moves {
+  position: absolute;
+  top: 15px;
+  left: 20px;
   border: 3px dotted gray;
   padding: 5px;
 }

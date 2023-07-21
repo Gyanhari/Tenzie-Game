@@ -74,10 +74,11 @@ export default function App() {
       handleClick={() => holdDice(die.id)}
     />
   ));
-
+  const bestMoves = localStorage.getItem("New Best Total Moves");
   return (
     <main>
       <h1 className="title">Tenzies</h1>
+      <h2 className="best-moves">Best Moves : {bestMoves}</h2>
       <h2 className="tot-moves">Total Moves : {totalMoves}</h2>
       <p className="instructions">
         Roll until all dice are the same. Click each die to freeze it at its
