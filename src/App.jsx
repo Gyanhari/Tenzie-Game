@@ -76,25 +76,27 @@ export default function App() {
   ));
   const bestMoves = localStorage.getItem("New Best Total Moves");
   return (
-    <main>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <h1 className="title">Tenzies</h1>
-      <h2 className="best-moves">Best Moves : {bestMoves}</h2>
-      <h2 className="tot-moves">Total Moves : {totalMoves}</h2>
-      <p className="instructions">
-        Roll until all dice are the same. Click each die to freeze it at its
-        current value between rolls.
-      </p>
-      <div className="dice-container">{diceElements}</div>
-      <button className="roll-dice" onClick={rollDice}>
-        {tenzies ? "Play Again" : "Roll"}
-      </button>
+    <>
+      <main>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <h1 className="title">Tenzies</h1>
+        <h2 className="best-moves">Best Moves : {bestMoves}</h2>
+        <h2 className="tot-moves">Total Moves : {totalMoves}</h2>
+        <p className="instructions">
+          Roll until all dice are the same. Click each die to freeze it at its
+          current value between rolls.
+        </p>
+        <div className="dice-container">{diceElements}</div>
+        <button className="roll-dice" onClick={rollDice}>
+          {tenzies ? "Play Again" : "Roll"}
+        </button>
+      </main>
       {tenzies && <Confetti />}
-    </main>
+    </>
   );
 }
