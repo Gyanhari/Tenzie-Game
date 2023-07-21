@@ -1,8 +1,6 @@
-# React + Vite
+# Made A Tenzies Game Using React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- uses state to see whether the dice is held or not
+- if held uses conditional rendering to change the backgroundColor property
+- tracks the total number of moves it Took you to Solve it.
+- saves the best number of moves to localStorage
