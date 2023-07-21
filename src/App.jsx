@@ -42,12 +42,11 @@ export default function App() {
     return newDice;
   }
   function saveToLocalStorage(moves) {
-    localStorage.setItem("New Best Total Moves", "9999");
     const newTotalMoves = moves;
     const prevTotalMoves = localStorage.getItem("New Best Total Moves");
     if (newTotalMoves < prevTotalMoves) {
       localStorage.setItem("New Best Total Moves", moves);
-    }
+    } else localStorage.setItem("New Best Total Moves", moves);
   }
   function rollDice() {
     if (!tenzies) {
