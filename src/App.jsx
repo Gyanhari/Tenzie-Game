@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Die from "./dieComponent";
 import { nanoid } from "nanoid";
 import Confetti from "react-confetti";
+import Footer from "./Footer";
 
 export default function App() {
   const [totalMoves, setTotalMoves] = useState(-1);
@@ -96,6 +97,7 @@ export default function App() {
         </button>
       </main>
       {tenzies && <Confetti />}
+      <Footer />
     </>
   );
 }

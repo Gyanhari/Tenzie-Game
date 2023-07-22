@@ -93,3 +93,15 @@ main {
   border: 3px dotted gray;
   padding: 5px;
 }
+.footer-component {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  min-height: 45px;
+  align-items: center;
+  justify-content: center;
+}
