@@ -45,9 +45,13 @@ export default function App() {
   function saveToLocalStorage(moves) {
     const newTotalMoves = moves;
     const prevTotalMoves = localStorage.getItem("New Best Total Moves");
-    if (newTotalMoves < prevTotalMoves) {
+    if (prevTotalMoves) {
+      if (newTotalMoves < prevTotalMoves) {
+        localStorage.setItem("New Best Total Moves", moves);
+      }
+    } else {
       localStorage.setItem("New Best Total Moves", moves);
-    } else localStorage.setItem("New Best Total Moves", moves);
+    }
   }
   function rollDice() {
     if (!tenzies) {
